@@ -128,5 +128,9 @@ export default class Cena {
         this.contaChave = 0;
         this.tempo = 0;
         this.fase = 1;
+        this.frequencia = 100;
+        this.timer = 0;
+        
     }
+
 }

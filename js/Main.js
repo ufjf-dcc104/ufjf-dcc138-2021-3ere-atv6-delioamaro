@@ -15,18 +15,18 @@ const assets = new AssetManager(mixer);
 
 
 
-assets.carregaImagem("guerreiro", "assets/guerreiro.png");
+assets.carregaImagem("arqueiro", "assets/arqueiro.png");
+assets.carregaImagem("fireball", "assets/fireball.png");
+assets.carregaImagem("pisoFogo", "assets/pisoFogo.png");
 assets.carregaImagem("parede", "assets/parede.png");
 assets.carregaImagem("piso", "assets/piso.png");
-assets.carregaImagem("chave", "assets/key.png");
-assets.carregaImagem("bau", "assets/bau.png");
-assets.carregaAudio("chave", "assets/chave.wav");
-assets.carregaAudio("bau", "assets/bau.wav");
+assets.carregaAudio("boom", "assets/boom.wav");
+
 
 
 const canvas = document.querySelector("canvas");
-canvas.width = 21*32;
-canvas.height = 16*32
+canvas.width = 20*32;
+canvas.height = 10*32
 
 input.configurarTeclado({
     ArrowLeft: "MOVE_ESQUERDA",

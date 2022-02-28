@@ -34,16 +34,15 @@ export default class Sprite {
         ctx.fillRect(this.x - this.w/2, this.y - this.h/2, this.w, this.h);
         ctx.strokeStyle = "blue";
         ctx.strokeRect(this.mx * this.cena.mapa.SIZE, this.my * this.cena.mapa.SIZE, this.cena.mapa.SIZE, this.cena.mapa.SIZE);*/
-        if(this.tag === "guerreiro"){
-            ctx.drawImage(this.assets.img("guerreiro"), Math.floor(this.c)*64, this.l*64, 64, 64, this.x - 22, this.y - 25, 45, 45);
+        if(this.tag === "arqueiro"){
+            ctx.drawImage(this.assets.img("arqueiro"), Math.floor(this.c)*64, this.l*64, 64, 64, this.x - 22, this.y - 25, 45, 45);
         }
-        if(this.tag === "chave"){
-            ctx.drawImage(this.assets.img("chave"), 0, 0, 50, 50, this.x -this.w/2, this.y - this.h/2, 25, 25);
+        if(this.tag === "enemy"){
+            ctx.drawImage(this.assets.img("fireball"), 0, 0, 100, 100, this.x -this.w/2, this.y - this.h/2, 50, 50);
         }
-        if(this.tag === "bau"){
-            ctx.drawImage(this.assets.img("bau"), 0, 0, 32, 32, this.x -this.w/2, this.y - this.h/2, 32, 32);
+        if(this.tag === "pisoFogo"){
+            ctx.drawImage(this.assets.img("pisoFogo"), 0, 0, 100, 100, this.x -this.w/2, this.y - this.h/2, 55, 65);
         }
-        
     }
 
     controlar(dt) {
@@ -104,9 +103,9 @@ export default class Sprite {
         this.aplicaRestricoesDireita(this.mx + 1, this.my - 1);
         this.aplicaRestricoesDireita(this.mx + 1, this.my);
         this.aplicaRestricoesDireita(this.mx + 1, this.my + 1);
-        this.aplicaRestricoesEsquerda(this.mx - 1, this.my - 1);
-        this.aplicaRestricoesEsquerda(this.mx - 1, this.my);
-        this.aplicaRestricoesEsquerda(this.mx - 1, this.my + 1);
+        //this.aplicaRestricoesEsquerda(this.mx - 1, this.my - 1);
+        this.aplicaRestricoesEsquerda(this.mx, this.my);
+        //this.aplicaRestricoesEsquerda(this.mx - 1, this.my + 1);
         this.aplicaRestricoesBaixo(this.mx - 1, this.my + 1);
         this.aplicaRestricoesBaixo(this.mx, this.my + 1);
         this.aplicaRestricoesBaixo(this.mx + 1, this.my + 1);

@@ -9,9 +9,9 @@ export default class CenaCarregando extends Cena {
         this.ctx.fillStyle = "yellow";
         this.ctx.textAlign = "center";
         this.ctx.fillText(this.assets?.progresso(), this.canvas.width/2, this.canvas.height/2);
-        this.ctx.fillText("Colete todas as chaves e em seguida abra o bau em um determinado tempo", this.canvas.width/2, this.canvas.height/2 + 40);
+        this.ctx.fillText("Desvie de todas bolas de fogos", this.canvas.width/2, this.canvas.height/2 + 40);
         if(this.assets.acabou()) {
-            this.ctx.fillText("Aperte espaço para iniciar/continuar", this.canvas.width/2, this.canvas.height/2 + 80);
+            this.ctx.fillText("Aperte espaço para iniciar ou continuar", this.canvas.width/2, this.canvas.height/2 + 80);
         }
     }
 
