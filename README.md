@@ -1,6 +1,6 @@
 Jogo da Atividade 6
 
-Um guerreio em uma masmorra procurando chaves para abrir um bau em busca de riquesa.
+Enquanto seu amigo guerreiro esta coletando os tesouros, o arqueiro caiu em uma armadinha onde tem que desviar de bolas de fogo vindo em sua direçao.
 
 Controles:
 
@@ -9,10 +9,12 @@ Controles:
 
 Objetivo:
 
-- coletar todas as chaves em um determinado tempo para conseguir abrir o bau e passar de fase, sao ao total 3 fases, cada fase aumenta a quantidade de chaves que devem ser pegas.
+- desviar das bolas de fogo vindo em sua direaçao, possui 3 fases, a cada fase a frequencia e a velocidade das bolas de fogo aumenta;
 
 Créditos:
 
 - utilização dos sprites da parede e do piso : https://opengameart.org/;
 - utilização do sprite do personagem : http://sprite-generator.herokuapp.com/;
 - utlizaçao dos sons ao coletar as chaves e o bau : https://sfbgames.itch.io/chiptone;
+
+
