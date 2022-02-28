@@ -4,7 +4,7 @@ Um guerreio em uma masmorra procurando chaves para abrir um bau em busca de riqu
 
 Controles:
 
-- utilize as setas para movimentar o personagem em qualquer posiçao;
+- utilize as setas para movimentar o personagem em qualquer direçao;
 - barra de espaço pra iniciar ou jogar novamente;
 
 Objetivo:
